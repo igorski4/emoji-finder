@@ -3,9 +3,115 @@
 
 html
   scroll-behavior: smooth
+  height: 100%
+
+body
+  height: 100%
 
 .container 
-  max-width: 1440px
+  max-width: 986px
   margin: 0 auto
-  font-family: "Nunito", "Open Sans", sans-serif
+  font-family: "Inter", "Open Sans", sans-serif
 
+.body-wrapper
+  min-height: 100%
+  display: flex
+  flex-direction: column
+
+.header
+  background: linear-gradient(92.33deg, #087990 0.12%, #055160 100%)
+  border-bottom: 1px solid #CED4DA
+  &__wrapper
+    padding-top: 68px
+  &__title
+    text-align: center
+    font-style: normal
+    font-weight: 700
+    font-size: 72px
+    line-height: 87px
+    color: #CFF4FC
+  &__subtitle
+    margin-bottom: 68px
+
+    text-align: center
+    font-style: normal
+    font-weight: 400
+    font-size: 21px
+    line-height: 36px
+    color: #CFF4FC
+  &__input
+    position: relative
+    top: 32px
+    width: 820px
+    height: 64px
+    margin: 0 auto
+    padding-left: 32px
+
+    border: 1px solid #CED4DA
+    border-radius: 4px
+    &::placeholder      
+      font-style: normal
+      font-weight: 400
+      font-size: 24px
+      line-height: 21px
+      color: #ABB5BE
+    &:focus
+      outline: none
+
+.main
+  flex: 1 1 auto
+  background: #EDEEF3
+  &__wrapper
+    padding-top: 80px
+    padding-bottom: 50px
+  &__grid
+    display: grid
+    grid-template-columns: repeat(auto-fit, 316px)
+    grid-template-rows: repeat(auto-fill, 1fr)
+    justify-content: center
+    gap: 22px 19px
+
+.grid
+  &__item
+    padding: 24px
+    height: 184px
+    background: #FFFFFF
+    border: 1px solid #DEE2E6
+    border-radius: 4px
+
+.item
+  text-align: center 
+  &__symbol
+    font-size: 48px
+    line-height: 48px
+    margin-bottom: 18px
+  &__title
+    margin-bottom: 12px
+    
+    font-style: normal
+    font-weight: 700
+    font-size: 17px
+    line-height: 28px
+    text-decoration-line: underline
+    color: #000000
+  &__keywords
+    font-style: normal
+    font-weight: 400
+    font-size: 12px
+    line-height: 15px
+    text-align: center
+    color: #3F444A
+
+.footer
+  background: #EDEEF3
+  &__wrapper
+    padding-top: 13px
+    padding-bottom: 17px
+    border-top: 1px solid #CED4DA
+  &__title
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 21px
+    text-align: center
+    color: #6C757D
