@@ -19,11 +19,13 @@ body
   flex-direction: column
 
 .header
+  padding-top: 68px
+
   background: linear-gradient(92.33deg, #087990 0.12%, #055160 100%)
   border-bottom: 1px solid #CED4DA
-  &__wrapper
-    padding-top: 68px
   &__title
+    margin-bottom: 4px
+
     text-align: center
     font-style: normal
     font-weight: 700
@@ -31,7 +33,7 @@ body
     line-height: 87px
     color: #CFF4FC
   &__subtitle
-    margin-bottom: 68px
+    margin-bottom: 36px
 
     text-align: center
     font-style: normal
@@ -47,6 +49,11 @@ body
     margin: 0 auto
     padding-left: 32px
 
+
+    font-style: normal
+    font-weight: 400
+    font-size: 24px
+    line-height: 21px
     border: 1px solid #CED4DA
     border-radius: 4px
     &::placeholder      
@@ -55,15 +62,13 @@ body
       font-size: 24px
       line-height: 21px
       color: #ABB5BE
-    &:focus
-      outline: none
 
 .main
   flex: 1 1 auto
+  padding-top: 80px
+  padding-bottom: 50px
+  
   background: #EDEEF3
-  &__wrapper
-    padding-top: 80px
-    padding-bottom: 50px
   &__grid
     display: grid
     grid-template-columns: repeat(auto-fit, 316px)
@@ -103,11 +108,11 @@ body
     color: #3F444A
 
 .footer
+  padding-top: 13px
+  padding-bottom: 17px
+  border-top: 1px solid #CED4DA
+
   background: #EDEEF3
-  &__wrapper
-    padding-top: 13px
-    padding-bottom: 17px
-    border-top: 1px solid #CED4DA
   &__title
     font-style: normal
     font-weight: 400
