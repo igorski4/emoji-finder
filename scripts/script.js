@@ -53,4 +53,5 @@ input.addEventListener("input", () => {
     if (countFinding === arrUniqueWords.length)
       addCard(elem.symbol, elem.title, elem.keywords);
   });
+  if (gridEmoji.innerHTML === "") addCard("🗙", "Not found", "");
 });
