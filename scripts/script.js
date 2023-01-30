@@ -19,7 +19,7 @@ const addCard = (symbol, title, keywords) => {
   divEmoji.append(pTitle);
 
   let pKeywords = document.createElement("p");
-  pKeywords.innerHTML = keywords;
+  pKeywords.innerHTML = [...new Set(keywords.split(" "))].join(" ");
   pKeywords.className = "item__keywords";
   divEmoji.append(pKeywords);
 
