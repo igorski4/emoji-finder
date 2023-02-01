@@ -8,9 +8,6 @@ export let arrPagination = document.querySelectorAll(".pagination__item");
 
 export const renderPageButton = () => {
   let countPage = Math.ceil(tempData.length / select.value);
-  console.log(countPage);
-  console.log(tempData.length);
-  console.log(select.value);
   pagination.innerHTML = "";
 
   if (countPage > 5)
