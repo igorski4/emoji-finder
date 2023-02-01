@@ -18,6 +18,8 @@ select.addEventListener("change", () => {
 
 input.addEventListener("input", () => {
   tempData = handlerInput();
-  renderPageButton();
-  showPage();
+  if (tempData.length !== 0) {
+    renderPageButton();
+    showPage();
+  }
 });

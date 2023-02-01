@@ -316,11 +316,23 @@ body {
   line-height: 16px;
   color: #055160;
   border: 1px solid #DEE2E6;
+  cursor: pointer;
 }
 .pagination__item-active {
   color: #FFFFFF;
   background: #055160;
   border: 1px solid #055160;
+}
+.pagination__item:hover {
+  transform: translateY(-3px);
+  background: rgba(5, 81, 96, 0.15);
+}
+.pagination__item:active {
+  transform: translateY(-3px);
+  opacity: 0.8;
+}
+.pagination__item-active:hover {
+  background: #055160;
 }
 
 .pages__title {
@@ -342,6 +354,7 @@ body {
   color: #6C757D;
   border: 1px solid #CED4DA;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 @media (max-width: 900px) {

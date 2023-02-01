@@ -20,7 +20,8 @@ export const handlerInput = () => {
     });
 
     filterData.forEach((elem) => addCard(elem));
-    if (gridEmoji.innerHTML === "") addCard("🗙", "Not found", "");
+    if (!gridEmoji.innerHTML)
+      addCard({ symbol: "🗙", title: "Not found", keywords: "" });
     return filterData;
   } else return newData;
 };

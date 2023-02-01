@@ -142,11 +142,20 @@ body
     color: #055160
 
     border: 1px solid #DEE2E6
+    cursor: pointer
   &__item-active
     color: #FFFFFF
 
     background: #055160
     border: 1px solid #055160
+  &__item:hover
+    transform: translateY(-3px)
+    background:  rgba(5, 81, 96, 0.15)
+  &__item:active
+    transform: translateY(-3px)
+    opacity: 0.8
+  &__item-active:hover
+    background: #055160
     
 .pages
   &__title
@@ -170,6 +179,7 @@ body
 
     border: 1px solid #CED4DA
     border-radius: 4px
+    cursor: pointer
 
 
 @media (max-width: 900px)
