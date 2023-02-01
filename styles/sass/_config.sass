@@ -108,8 +108,8 @@ body
     color: #3F444A
 
 .footer
-  padding-top: 13px
-  padding-bottom: 17px
+  padding-top: 18px
+  padding-bottom: 19px
   border-top: 1px solid #CED4DA
 
   background: #EDEEF3
@@ -120,6 +120,57 @@ body
     line-height: 21px
     text-align: center
     color: #6C757D
+  &__wrapper
+    display: flex
+    justify-content: space-between
+  &__pagination
+    display: flex
+    justify-content: start
+  &__pages
+    display: flex
+    justify-content: end
+    gap: 12px
+
+.pagination
+  &__item
+    padding: 12px 14px
+
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 16px
+    color: #055160
+
+    border: 1px solid #DEE2E6
+  &__item-active
+    color: #FFFFFF
+
+    background: #055160
+    border: 1px solid #055160
+    
+.pages
+  &__title
+    padding-top: 9px
+
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 21px
+  &__select
+    display: block
+    width: 120px
+    height: 38px
+    padding-left: 10px  
+
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 21px
+    color: #6C757D
+
+    border: 1px solid #CED4DA
+    border-radius: 4px
+
 
 @media (max-width: 900px)
   .header
